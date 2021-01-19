@@ -1,0 +1,16 @@
+song="";
+song2="";
+function preload(){
+    song=loadSound("Apna Time Aayega - Gully Boy.mp3");
+    song2=loadSound("B.E.R. - The Night Begins To Shine (Teen Titans Go ) - Official Musical (1).mp3")
+}
+function setup(){
+    canvas=createCanvas(600,500);
+    canvas.center();
+    video=createCapture(VIDEO,600,500);
+    video.hide();
+
+}
+function draw(){
+    image(video,0,0,600,500);
+}
